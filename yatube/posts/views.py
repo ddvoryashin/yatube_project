@@ -18,7 +18,7 @@ def group_posts(request, slug):
     posts = Post.objects.filter(group=group).order_by('-pub_date')[:10]
     template = 'posts/group_list.html'
     context = {
-        #'title': 'Здесь будет информация о группах проекта Yatube',
+        'title': 'Здесь будет информация о группах проекта Yatube',
         'group': group,
         'posts': posts,
     }

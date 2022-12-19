@@ -12,6 +12,8 @@
     <p>
         Группа тайных поклонников графа.
     </p>
+    {% for post in Post.objects.filter(group=slug) %}
+    {% endfor %}
     <article>
         <ul>
         <li>
